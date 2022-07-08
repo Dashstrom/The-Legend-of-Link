@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" id="root" fx:id="borderPane" focusTraversable="true"
+            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="896.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx"
+            fx:controller="fr.dashstrom.controller.Controller"/>

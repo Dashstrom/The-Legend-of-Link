@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" id="inventory" fx:id="inventory" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" styleClass="back" stylesheets="@style/stylesheet.css"
+            xmlns="http://javafx.com/javafx" fx:controller="fr.dashstrom.controller.InventoryController">
+    <center>
+        <HBox prefHeight="896.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox>
+                    <children>
+                        <HBox prefHeight="753.0" prefWidth="0.0">
+                            <children>
+                                <VBox prefWidth="350.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="195.0"
+                                               text="Consommables">
+                                            <font>
+                                                <Font size="24.0"/>
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="wood"/>
+                                                <String fx:value="wood-label"/>
+                                            </styleClass>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" top="10.0"/>
+                                            </VBox.margin>
+                                        </Label>
+                                        <TableView fx:id="consumables" prefHeight="643.0" styleClass="table">
+                                            <columns>
+                                                <TableColumn fx:id="consumablesVisual" editable="false" maxWidth="60.0"
+                                                             minWidth="60.0" prefWidth="60.0" resizable="false"
+                                                             sortable="false" text="Visuel"/>
+                                                <TableColumn fx:id="consumablesName" editable="false" maxWidth="110.0"
+                                                             minWidth="110.0" prefWidth="110.0" resizable="false"
+                                                             sortable="false" text="Nom"/>
+                                                <TableColumn fx:id="consumablesDescription" maxWidth="180.0"
+                                                             minWidth="180.0" prefWidth="180.0" text="Description"/>
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </VBox>
+                                <VBox prefWidth="350.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="195.0" text="Armes">
+                                            <font>
+                                                <Font size="24.0"/>
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="wood"/>
+                                                <String fx:value="wood-label"/>
+                                            </styleClass>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" top="10.0"/>
+                                            </VBox.margin>
+                                        </Label>
+                                        <TableView fx:id="weapons" prefHeight="643.0" styleClass="table">
+                                            <columns>
+                                                <TableColumn fx:id="weaponsVisual" editable="false" maxWidth="60.0"
+                                                             minWidth="60.0" prefWidth="60.0" resizable="false"
+                                                             sortable="false" text="Visuel"/>
+                                                <TableColumn fx:id="weaponsName" editable="false" maxWidth="110.0"
+                                                             minWidth="110.0" prefWidth="110.0" resizable="false"
+                                                             sortable="false" text="Nom"/>
+                                                <TableColumn fx:id="weaponsDamage" editable="false" maxWidth="80.0"
+                                                             minWidth="80.0" resizable="false" sortable="false"
+                                                             text="Dégat"/>
+                                                <TableColumn fx:id="weaponsCooldown" editable="false" maxWidth="100.0"
+                                                             minWidth="100.0" prefWidth="100.0" resizable="false"
+                                                             sortable="false" text="Vitesse"/>
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </VBox>
+                                <VBox prefWidth="350.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="90.0" prefWidth="195.0" text="Equipées">
+                                            <font>
+                                                <Font size="24.0"/>
+                                            </font>
+                                            <styleClass>
+                                                <String fx:value="wood"/>
+                                                <String fx:value="wood-label"/>
+                                            </styleClass>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" top="10.0"/>
+                                            </VBox.margin>
+                                        </Label>
+                                        <TableView fx:id="equipped" prefHeight="643.0" styleClass="table">
+                                            <columns>
+                                                <TableColumn fx:id="equippedVisual" editable="false" maxWidth="60.0"
+                                                             minWidth="60.0" prefWidth="60.0" resizable="false"
+                                                             sortable="false" text="Visuel"/>
+                                                <TableColumn fx:id="equippedName" editable="false" maxWidth="110.0"
+                                                             minWidth="110.0" prefWidth="110.0" resizable="false"
+                                                             sortable="false" text="Nom"/>
+                                                <TableColumn fx:id="equippedDamage" editable="false" maxWidth="80.0"
+                                                             minWidth="80.0" resizable="false" sortable="false"
+                                                             text="Dégat"/>
+                                                <TableColumn fx:id="equippedCooldown" editable="false" maxWidth="101.0"
+                                                             minWidth="100.0" prefWidth="101.0" resizable="false"
+                                                             sortable="false" text="Vitesse"/>
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <Button fx:id="actionButton" mnemonicParsing="false" onAction="#onAction" prefHeight="84.0"
+                                prefWidth="308.0">
+                            <VBox.margin>
+                                <Insets left="740.0" top="30.0"/>
+                            </VBox.margin>
+                            <styleClass>
+                                <String fx:value="wood"/>
+                                <String fx:value="wood-button"/>
+                            </styleClass>
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+    <left>
+        <VBox alignment="CENTER" pickOnBounds="false" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onContinue" prefHeight="84.0" prefWidth="308.0"
+                        text="Continuer">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                    <styleClass>
+                        <String fx:value="wood"/>
+                        <String fx:value="wood-button"/>
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets bottom="20.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onExit" prefHeight="84.0" prefWidth="308.0" text="Quitter">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                    <styleClass>
+                        <String fx:value="wood"/>
+                        <String fx:value="wood-button"/>
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets left="96.0" right="96.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </left>
+</BorderPane>

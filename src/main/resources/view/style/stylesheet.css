@@ -1,0 +1,205 @@
+/* NPC dialog */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* root borderpane */
+#root {
+    -fx-background-image: url("/image/back.jpg");
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-border-width: 0;
+}
+
+/* Define font */
+@font-face {
+    font-family: 'Wantedo';
+    src: url('/font/Wantedo.ttf');
+}
+
+/* Inventory */
+#inventory {
+    -fx-font-family: "Wantedo";
+}
+
+/* Font with wood style */
+.wood {
+    -fx-font-family: "Wantedo";
+    -fx-text-fill: "#2d1500";
+}
+
+/* Buttons */
+.wood-button {
+    -fx-font-family: "Wantedo";
+    -fx-text-fill: "#2d1500";
+    -fx-background-image: url("/image/wood/plank_square.png");
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-font-size: 24px;
+}
+
+/* Hover buttons */
+.wood-button:hover {
+    -fx-font-size: 28px;
+}
+
+/* Hover buttons */
+.wood-button:pressed {
+    -fx-font-size: 20px;
+}
+
+/* Label on top of inventory */
+.wood-label {
+    -fx-background-image: url("/image/wood/plank_right.png");
+    -fx-font-size: 18px;
+    -fx-background-size: cover;
+    -fx-effect: null;
+}
+
+/* Color at the background of inventory */
+.back {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Table view color  */
+.table-view {
+    -fx-background-color: #c39b77;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Remove focus effect on tableview  */
+.table-view, .table-view:focused {
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 0;
+}
+
+/* Gradiant effet on rows labels */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+/* Header tableview */
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c39b77;
+    -fx-effect: null;
+}
+
+/* Selected row */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #784c1e;
+}
+
+/* Selected row when table not focused */
+.table-row-cell:filled:focused:selected {
+    -fx-background-color: #784c1e;
+}
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: #b37b46;
+}
+
+/* Selected row hovered */
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background-color: #5e3a14;
+}
+
+/* Invisible */
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/* Remove arrow at the down of table view */
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+/* Set cell style */
+.table-row-cell {
+    -fx-cell-size: 45px;
+    -fx-font-size: 12px;
+    -fx-background-color: #c39b77;
+    -fx-table-cell-border-color: #664229;
+}
+
+/* Set odd background */
+.table-row-cell:odd {
+    -fx-background-color: #b99976;
+}
+
+/* Remove scrollbar */
+.table-view .scroll-bar:horizontal {
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+}
+
+/* Color of the background of the game over screen */
+.backgameover {
+    -fx-background-color: black;
+}
+
+/*GameOver label */
+.textgameover {
+    -fx-font-family: "Wantedo";
+    -fx-text-fill: "#2d1500";
+    -fx-font-size: 80px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Dialog */
+
+/* Middle zone */
+.assign-error > .button-bar > .container {
+    -fx-background-color: #b99976;
+}
+
+.assign-error > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-background-color: #b37b46;
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+}
+
+/* Header */
+.assign-error .header-panel {
+    -fx-background-color: #b99976;
+}
+
+.assign-error .header-panel .label {
+    -fx-background-color: #b37b46;
+    -fx-font-size: 15px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10;
+    -fx-text-fill: black;
+}
+
+
+/* Button */
+.assign-error .button {
+    -fx-background-image: url("/image/wood/plank_square.png");
+    -fx-background-size: cover;
+    -fx-background-color: #664229;
+    -fx-text-fill: black;
+    -fx-wrap-text: true;
+    -fx-cursor: hand;
+    -fx-pref-width: 103;
+    -fx-pref-height: 28;
+}
+
+.assign-error .button:hover {
+    -fx-background-color: #c39b77;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}

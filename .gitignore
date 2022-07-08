@@ -1,0 +1,30 @@
+# Out build and package
+target/
+*.class
+*.jar
+bin/
+*.war
+*.ear
+*.iml
+
+# IDEs and editors
+.idea/*
+!.idea/runConfigurations
+.project
+.classpath
+.factorypath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
