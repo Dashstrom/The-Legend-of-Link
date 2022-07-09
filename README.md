@@ -15,6 +15,8 @@ Install source with javadoc
 ./mvnw dependency:sources
 ```
 
+Install [Tiled](https://www.mapeditor.org/) for edit zones
+
 
 ## Source
 
